@@ -54,6 +54,7 @@ app.use('/api/v1/categories', require('./routes/category'));
 app.use('/api/v1/product-types', require('./routes/productType'));
 app.use('/api/v1/users', require('./routes/user'));
 app.use('/api/v1/payments', require('./routes/payment'));
+app.use('/api/v1/queries', require('./routes/query'));
 
 app.get('/', (req, res) => {
     res.status(200).json({ success: true, message: 'API is running...' });
